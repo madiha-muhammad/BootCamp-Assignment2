@@ -1,25 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h5>** Start React **</h5>
+      <ul>
+        <li>1- create new react app and run it.</li>
+        <li>-- npx create-react-app app-name. app created</li>
+        <li>-- move to app folder using cd app-name</li>
+        <li>-- yarn start. app start on localhost</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>2- Deploy on surge</li>
+        <li>&nbsp;</li>
+        <li>2.1- Deploy manually on surge.</li>
+        <li>&nbsp;</li>
+        <li>-- yarn build. build created</li>
+        <li>-- surge ./build . Path of build folder</li>
+        <li>-- name.surge.sh   . change name. Deployed</li>
+        <li>&nbsp;</li>
+        <li>2.2- Deploy via git. automate it</li>
+        <li>&npsp;</li>
+        <li>--By UI</li>
+        <li>--- GitHub Desktop &#62; Add Local Repository &#62; select project-name from hard-drive as local repo &#62; Create Repository</li>
+        <li>--- Commit it &#62; Publish Repo &#62; give it name &#62; then Publish</li>
+      </ul>
     </div>
   );
 }
 
 export default App;
+
