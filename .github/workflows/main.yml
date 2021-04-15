@@ -29,10 +29,13 @@ jobs:
           version: 12
     
       - name: GitHub Action for Yarn
-        uses: npx browserslist@latest --update-db
+        uses: Borales/actions-yarn@v2.3.0
+        with: 
+          npx browserslist@latest --update-db
+      - name: install yarn
         with:
           # Yarn command
-          cmd: install # npm install/ yarn install
+          cmd: yarn install # npm install/ yarn install
 
       - name: Creating build
         run: yarn build
