@@ -37,8 +37,8 @@ jobs:
       - name: Creating build
         run: yarn build
         
-      - name: Upgrading
-        run: yarn upgrade caniuse-lite browserslist
+      - name: Update BrowserList
+        run: px browserslist --update-db
 
       - name: installing surge
         run: npm install -g surge
