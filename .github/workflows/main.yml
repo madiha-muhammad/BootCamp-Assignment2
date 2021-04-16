@@ -33,12 +33,12 @@ jobs:
         with:
           # Yarn command
           cmd: install # npm install/ yarn install
-
-      - name: Creating build
-        run: yarn build
         
       - name: Update BrowserList
         run: px browserslist --update-db
+        
+      - name: Creating build
+        run: yarn build
 
       - name: installing surge
         run: npm install -g surge
