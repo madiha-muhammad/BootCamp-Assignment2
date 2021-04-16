@@ -33,6 +33,9 @@ jobs:
         with:
           # Yarn command
           cmd: install # npm install/ yarn install
+          
+      - name: update
+        run: npm browserslist@latest --update-db
         
       - name: Creating build
         run: sudo yarn build
