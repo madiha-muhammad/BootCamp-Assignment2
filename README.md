@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+### BootCamp-Assignment2: Start React and Deploy it + Errors "Browserslist: caniuse-lite is outdated" and "Yarn Build Permission Denied"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+http://assignment2_start-react.surge.sh/
 
-## Available Scripts
+### Start React
 
-In the project directory, you can run:
+1- create new react app and run it.
 
-### `yarn start`
+-- npx create-react-app app-name. app created
+-- move to app folder using cd app-name
+-- yarn start. app start on localhost
+ 
+ 
+2- Deploy on surge
+ 
+2.1- Deploy manually on surge.
+ 
+-- yarn build. build created
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+-- surge ./build . Path of build folder
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-- name.surge.sh . change name. Deployed
+ 
+ 
+2.2- Deploy via git. automate it
+ 
+-- By UI
 
-### `yarn test`
+--- GitHub Desktop > Add Local Repository > select project-name from hard-drive as local repo > Create Repository
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+--- Commit it > Publish Repo > give it name > then Publish Branch
+ 
+--- Auto deploy on surge. Use Actions > Yaml file with surge token in Settings > Secrets
+ 
+ 
+ 
+** Errors with solution **
+ 
+Error 1-- "Browserslist: caniuse-lite is outdated".
+ 
+-- Solution: --
 
-### `yarn build`
+--- npm outdated
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+--- npm update --save/--save-dev
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+--- yarn install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+--- npm install caniuse-lite@latest --save
+ 
 
-### `yarn eject`
+-- upgraing browserslist in yaml file at github --
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---- run: npx browserslist --update-db
+ 
+ 
+Error 2-- "Creating an optimized production build...Failed to compile. EACCES: permission denied, mkdir '/home/runner/work/folder-name/node_modules/.cache'" --
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+** Errors with solution **
+ 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Error 1-- "Browserslist: caniuse-lite is outdated".
 
-## Learn More
+-- Solution: --
+ 
+--- add administrative permissions with yarn build
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+--- sudo yarn build
+ 
