@@ -20,14 +20,26 @@ function App() {
         <li>-- name.surge.sh   . change name. Deployed</li>
         <li>&nbsp;</li>
         <li>2.2- Deploy via git. automate it</li>
-        <li>&npsp;</li>
+        <li>&nbsp;</li>
         <li>--By UI</li>
         <li>--- GitHub Desktop &#62; Add Local Repository &#62; select project-name from hard-drive as local repo &#62; Create Repository</li>
         <li>--- Commit it &#62; Publish Repo &#62; give it name &#62; then Publish Branch</li>
-        <li>&npsp;</li>
+        <li>&nbsp;</li>
         <li>--- Auto deploy on surge. Use Actions &#62; Yaml file with surge token in Settings &#62; Secrets</li>
-        <li>&npsp;</li>
-        <li>&npsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>** Errors with solution **</li>
+        <li>&nbsp;</li>
+        <li>1- "Browserslist: caniuse-lite is outdated".</li>
+        <li>-- Solution: --</li>
+        <li>--- npm outdated</li>
+        <li>--- npm update --save/--save-dev</li>
+        <li>--- yarn install</li>
+        <li>--- npm install caniuse-lite@latest --save</li>
+        <li>&nbsp;</li>
+        <li>-- upgraing browserslist in yaml file at github --</li>
+        <li>&nbsp;&nbsp;&nbsp;- run: npx browserslist --update-db</li>
+        <li>&nbsp;</li>
       </ul>
     </div>
   );
