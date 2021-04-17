@@ -34,9 +34,10 @@ http://assignment2_start-react.surge.sh/
  
  
  
-** Errors with solution **
+### Errors with solution 
  
-Error 1-- "Browserslist: caniuse-lite is outdated".
+#### Error 1-- 
+#### "Browserslist: caniuse-lite is outdated".
  
 -- Solution: --
 
@@ -54,7 +55,8 @@ Error 1-- "Browserslist: caniuse-lite is outdated".
 ---- run: npx browserslist --update-db
  
  
-Error 2-- "Creating an optimized production build...Failed to compile. EACCES: permission denied, mkdir '/home/runner/work/folder-name/node_modules/.cache'" --
+#### Error 2-- 
+#### "Creating an optimized production build...Failed to compile. EACCES: permission denied, mkdir '/home/runner/work/folder-name/node_modules/.cache'" 
 
 
 ** Errors with solution **
