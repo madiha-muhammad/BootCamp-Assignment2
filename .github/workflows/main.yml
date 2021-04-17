@@ -33,6 +33,9 @@ jobs:
         with:
           # Yarn command
           cmd: install # npm install/ yarn install
+          
+      - name: upgraing yarn
+        run: npx browserslist --update-db
 
       - name: Creating build
         run: yarn build
