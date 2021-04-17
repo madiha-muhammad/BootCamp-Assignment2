@@ -30,7 +30,8 @@ function App() {
         <li>&nbsp;</li>
         <li>** Errors with solution **</li>
         <li>&nbsp;</li>
-        <li>1- "Browserslist: caniuse-lite is outdated".</li>
+        <li>Error 1-- "Browserslist: caniuse-lite is outdated".</li>
+        <li>&nbsp;</li>
         <li>-- Solution: --</li>
         <li>--- npm outdated</li>
         <li>--- npm update --save/--save-dev</li>
@@ -40,6 +41,16 @@ function App() {
         <li>-- upgraing browserslist in yaml file at github --</li>
         <li>&nbsp;&nbsp;&nbsp;- run: npx browserslist --update-db</li>
         <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>
+          <li>Error 2-- "Creating an optimized production build...Failed to compile. EACCES: permission denied, mkdir '/home/runner/work/BootCamp-Assignment2/node_modules/.cache'" --</li>
+        </li>
+        <li>&nbsp;</li>
+        <li>-- Solution --</li>
+        <li>--- add administrative permissions with yarn build</li>
+        <li>--- sudo yarn build</li>
+        <li>&nbsp;</li>
+        <li><hr></hr></li>
       </ul>
     </div>
   );
