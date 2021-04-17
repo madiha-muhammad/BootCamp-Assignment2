@@ -35,10 +35,7 @@ jobs:
           cmd: install # npm install/ yarn install
           
       - name: upgraing yarn
-        run: npm browserslist --update-db
-        
-      - name: uninstalling
-        run: npm uninstall caniuse-lite browserslist
+        run: npx browserslist --update-db
 
       - name: Creating build
         run: yarn build
